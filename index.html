@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Столовая.РУ</title>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<header class="desktop2">
+  <div class="menu-top-wrap">
+        <ul>
+          <li><strong><a href="#">Компания</a></strong></li>
+          <li><strong><a href="#">Портфолио</a></strong></li>
+          <li><strong><a href="#">Проектирование</a></strong></li>
+          <li><strong><a href="#">Презентация</a></strong></li>
+          <li><strong><a href="#">Застройщикам</a></strong></li>
+          <li><strong><a href="#">Гос.заказчикам</a></strong></li>
+          <li><strong><a href="#">Таблет-питание</a></strong></li>
+          <li><strong><a href="#">Сервис</a></strong></li>
+          <li><strong><a href="#">Контакты</a></strong></li>
+          <li><strong><a href="#"><img src="images/mail.png" alt=""><span> info@stolovay.ru</span></a></strong></li>
+          <li class="tel-container header-open">
+            <strong><a href="#"><img src="images/phone.png" alt=""><span> 8 800 333-88-31</span></a></strong>
+          </li>
+        </ul>
+  </div>
+
+  <div class="search desktop2">
+        <a href="#">
+        <img src="images/logo1.png" width="222" alt="Столовая.ру лого">
+        </a>
+      <form method="get" action="/search/" class="search-find">
+       Все
+      </form>
+
+      <div class="search-suppliers">
+        <div class="suppliers-img">
+          <img src="images/suppliers.png" alt=""></div>
+        <div class="suppliers-text"><noindex><a target="_blank" rel="nofollow" href="#"><span>Мы на портале поставщиков</span>
+        </a></noindex></div>
+      </div>
+      <a rel="nofollow" href="#" class="search-basket">
+        <div class="basket-left"><span class="basket-count">
+                           0                        </span>
+          <div class="basket-img">
+            <img src="images/basket-img.png" alt=""></div>
+        </div>
+        <div class="basket-right">
+          <div class="basket-sum"><span>Сумма</span></div>
+          <div class="basket-num"><span>0 руб.</span></div>
+        </div>
+      </a>
+  </div>
+
+  <div class="search-categories scroll-menu">
+    <section class="header-categories desktop2">
+      <div class="categories">
+        <div class="container">
+          <div class="swiper-container swiper-container__categories desktop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="categories-item">
+                  <a href="#" data-id="2">
+                    <div class="categories-item__image">
+                      <img src="images/categories-1.png">
+                    </div>
+                    <span>Тепловое</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item">
+                  <a href="#" data-id="7">
+                    <div class="categories-item__image">
+                      <img src="images/categories-2.png">
+                    </div>
+                    <span>Холодильное</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item">
+                  <a href="#" data-id="8">
+                    <div class="categories-item__image">
+                      <img src="images/categories-3.png">
+                    </div>
+                    <span>Электромеханическое</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item">
+                  <a href="#" data-id="9">
+                    <div class="categories-item__image">
+                      <img src="images/categories-4.png">
+                    </div>
+                    <span>Посудомоечное</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item">
+                  <a href="#" data-id="50">
+                    <div class="categories-item__image">
+                      <img src="images/categories-5.png">
+                    </div>
+                    <span>Хлебопекарное</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="72">
+                  <div class="categories-item__image">
+                    <img src="images/categories-6.png">
+                  </div>
+                  <span>Линии раздачи</span></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="82">
+                  <div class="categories-item__image">
+                    <img src="images/categories-7.png">
+                  </div>
+                  <span>Нейтральное</span></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="83">
+                  <div class="categories-item__image">
+                    <img src="images/categories-8.png">
+                  </div>
+                  <span>Для фаст фуда</span></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="107">
+                  <div class="categories-item__image">
+                    <img src="images/categories-9.png">
+                  </div>
+                  <span>Для залов</span></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="124">
+                  <div class="categories-item__image">
+                    <img src="images/categories-10.png">
+                  </div>
+                  <span>Вспомогательное</span></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="categories-item"><a href="#" data-id="1940">
+                  <div class="categories-item__image">
+                    <img src="images/categories-11.png">
+                  </div>
+                  <span>Для магазинов</span></a></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+      </div>
+                </section>
+    <div class="shadow-l">
+    </div>
+  </div>
+</header>
+
+<section class="main-block">
+  <div class="container">
+    <div class="main-block__context">
+
+      <div class="main-block__context__item desktop2">
+
+        <div class="main-block__menu">
+          <div class="title">Целевые предложения</div>
+          <ul>
+            <li>
+              <a href="#">
+                Государственным заказчикам                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Кафе, барам, ресторанам                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Детским садам и школам                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Таблет-питание для больниц                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Оборудование для кондитерских                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Оборудование для пиццерии                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Для малого бизнеса                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Оборудование для мини кафе                     </a>
+            </li>
+            <li>
+              <a href="#">
+                Все предложения
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="main-block__context__item main-block__context__item_big">
+        <div class="swiper-container__mian swiper-container swiper-container-horizontal">
+          <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-869px, 0px, 0px);">
+
+
+            <div class="swiper-slide swiper-slide-prev" style="width: 869px;">
+              <div class="swiper-slide__context">
+                <div class=" text-up"><p>Портфолио</p></div>
+                <div class="titleMain">Комбинат питания МФТИ            </div>
+                <div class="text">Проектирование и комплексное снабжение</div>
+                <a rel="nofollow" href="/oborudovanie-dlya-pishhebloka/kombinat-studencheskogo-pitaniya" class="button button-orange">Подробнее</a>
+              </div>
+              <div class="main-block__slide-pic"><img src="/upload/iblock/104/104e445be381a1c4042cf8bf7cf774a2.png" alt=""></div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-active" style="width: 869px;">
+              <div class="swiper-slide__context">
+                <div class=" text-up"><p>Портфолио</p></div>
+                <div class="titleMain">Городская  больница им. Филатова            </div>
+                <div class="text">Проектирование предприятий питания</div>
+                <a rel="nofollow" href="oborudovanie-dlya-pishhebloka/pishcheblok-gorodskaya-klinicheskaya-bolnitsa-15-im-filatova" class="button button-orange">Подробнее</a>
+              </div>
+              <div class="main-block__slide-pic"><img src="/upload/iblock/16c/16c6b01ed4f7db9c8fcc7d657ffac106.png" alt=""></div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide-next" style="width: 869px;">
+              <div class="swiper-slide__context">
+                <div class=" text-up"><p>Портфолио</p></div>
+                <div class="titleMain">Ресторан "Седьмое небо"            </div>
+                <div class="text">Проектирование и комплексное снабжение</div>
+                <a rel="nofollow" href="/oborudovanie-dlya-pishhebloka/restoran-sedmoe-nebo" class="button button-orange">Подробнее</a>
+              </div>
+              <div class="main-block__slide-pic"><img src="/upload/iblock/87a/87af12b23586c554680c7ba842a5ee64.png" alt=""></div>
+            </div>
+
+
+
+
+          </div>
+          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+          <div class="swiper-button-prev mobile2"></div>
+          <div class="swiper-button-next mobile2"></div>
+        </div>
+      </div>
+      <div class="main-block__context__item">
+        <div class="main-block__banner">
+          <div class="main-block__banner__context">
+            <div class="image"><img src="images/mp2.png"></div>
+            <div class="text">Самые низкие цены</div>
+            <div class="titleMain">Распродажа</div><a rel="nofollow" href="#" class="link">Каталог распродаж  &gt;</a>
+          </div>
+        </div>			</div>
+    </div>
+  </div>
+</section>
+
+<section class="main-partners">
+  <div class="container">
+    <ul class="main-partners__context">
+      <li><a href="/brand/abat"><img src="images/fb3d8bc034640072e6150549d8d3abfb.png"></a></li>
+      <li><a href="/brand/hicold"><img src="images/ff3189555035073720ea12cb3ce8b09d.png"></a></li>
+      <li><a href="/brand/polair"><img src="images/638699932605fd956752803f0de59fc1.png"></a></li>
+      <li><a href="/brand/simeco"><img src="images/9501f208c745f69c06ab9f7dc6274233.png"></a></li>
+      <li><a href="/brand/rada"><img src="images/1f2ec38f5740d0ca22c21a29a1284742.png"></a></li>
+      <li><a rel="nofollow" href="#">Все бренды</a></li>
+    </ul>
+  </div>
+</section>
+
+<noindex>
+  <section class="news news-main">
+    <div class="container2">
+      <div class="titleMain"><span>Новости производителей</span></div>
+
+
+      <div class="news-content">
+        <div class="news-left">
+          <div class="news-left__item">
+            <a rel="nofollow" href="#" class="news-left__image"><img src="images/8a8ee56c837d445c680ab994f84b46d6.jpg" alt=""></a>
+            <div class="context">
+              <div class="news-left__data"><span class="manufacturer">Abat</span><span class="data">04.12.2017</span></div>
+              <a rel="nofollow" href="#" class="news-left__title title"><span>Новинка: двухъярусная подовая печь для пиццы ПЭП-4х2</span></a>
+              <div class="news-left__text text">
+                <p>Новое выгодное решение для профессионалов кухни! В серийное производство вышла двухъярусная подовая печь для пиццы ПЭП-4х2 торговой марки Abat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="news-right">
+          <div class="news-right-item">
+            <a rel="nofollow" href="#" class="news-right__image"><img src="images/5a7b9e8a15ab7cb2e470f72689060f6f.png" alt=""></a>
+            <div class="news-right-text">
+              <div class="news-right-text__data"><span class="manufacturer">Hicold</span><span class="data">15.12.2017</span></div>
+              <a rel="nofollow" href="#" class="news-right-text__title title"><span>Расширение модельного ряда Hicold</span></a>
+              <div class="news-right-text__text text">
+                <p></p><p>HICOLD расширяет ассортимент выпускаемого оборудования.</p><p></p>
+              </div>
+            </div>
+          </div>
+          <div class="news-right-item">
+            <a rel="nofollow" href="#" class="news-right__image"><img src="images/ae7e67ca80137a5b96bcca0f2e69416f.png" alt=""></a>
+            <div class="news-right-text">
+              <div class="news-right-text__data"><span class="manufacturer">ATESY</span><span class="data">10.11.2017</span></div>
+              <a rel="nofollow" href="#" class="news-right-text__title title"><span>Новинка: котлы пищеварочные АКПЭ</span></a>
+              <div class="news-right-text__text text">
+                <p></p><p>АТЕСИ предлагает Вашему вниманию котлы пищеварочные «АКПЭ»-100-2.1 и «АКПЭ»-100-2.1,  которые применяются на кухнях общественного питания для приготовления кипятка больших объемов и следующих блюд: каши, соусы, супы, бульоны, компоты, кисели, вареные овощи.</p><p></p>
+              </div>
+            </div>
+          </div>
+          <div class="news-right-item">
+            <a rel="nofollow" href="#" class="news-right__image"><img src="images/aad141154a73d69a352583641a69057d.png" alt=""></a>
+            <div class="news-right-text">
+              <div class="news-right-text__data"><span class="manufacturer">Abat</span><span class="data">12.12.2017</span></div>
+              <a rel="nofollow" href="#" class="news-right-text__title title"><span>Новинка: настольная холодильная витрина 700 серии ВХН-70-01</span></a>
+              <div class="news-right-text__text text">
+                <p></p><p>С радостью сообщаем о новинке - в серийное производство вышла еще одна настольная холодильная витрина 700 серии ВХН-70-01, предназначенная для демонстрации и поддержания в охлажденном состоянии различных продуктов. </p><p></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container2 news-button"><a rel="nofollow" href="#" class="button">Все новости</a></div>
+  </section>
+</noindex>
+
+<section class="main-recomend">
+  <div class="container2">
+    <div class="titleMain">Рекомендуем</div>
+    <div class="main-recomend__text text">В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых, ресторанов и кафе ведущих производителей.</div>
+    <div class="recommend-list">
+      <div class="recommend-top recommend-level">
+        <div class="recommend-left">
+          <a href="#" style="color: ;background-color: " class="recommend-item white high">
+            <div class="recommend-item-content"><span class="recommend-item__name">RATIONAL</span><span class="recommend-item__category">Пароконвектоматы</span>
+              <div class="recommend-item-desc">
+                <p>Педантичность и преданность своему делу делает продукцию Rational
+                  идеальной для тех, кто ищет надежность и долговечность.</p>
+              </div>
+            </div>
+            <div class="recommend-item__pic"><img src="images/8335cf14f9416165324b917d9007fbb8.png" alt=""></div>
+          </a>
+        </div>
+        <div class="recommend-right">
+          <a href="#" style="color: ;background-color: " class="recommend-item black long">
+            <div class="recommend-item__pic"><img src="images/8b6f0898a7ff6ef1e0c66c840838aa4e.png" alt=""></div>
+            <div class="recommend-item-content"><span class="recommend-item__name">ABAT</span><span class="recommend-item__category">Тепловое оборудование</span>
+              <div class="recommend-item-desc">
+                <p>Более 55 лет успешно работает на рынке торгово-технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="color: ;background-color: " class="recommend-item white long">
+            <div class="recommend-item-content"><span class="recommend-item__name">HICOLD</span><span class="recommend-item__category">Холодильные столы</span>
+              <div class="recommend-item-desc">
+                <p>Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</p>
+              </div>
+            </div>
+            <div class="recommend-item__pic"><img src="images/8bf183d7ebd8ff48261c65ba8822ab1c.png" alt=""></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-seo">
+  <div class="container2">
+    <div class="portfolio-seo__context">
+      <div class="portfolio-seo__context__left">
+        <h1>Комплексные решения оснащения столовых и кафе</h1>
+        <p>
+          Компания «Диалог» предлагает комплексное оснащение столовых, ресторанов, кафе и баров в Москве. Наши
+          услуги
+          построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
+        <p>Иными словами,
+          мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает
+          всю страну.
+        </p>
+        <p>
+          При этом в каждом регионе
+          мы готовы предложить                демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с
+          точки зрения
+          эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.
+        </p>
+
+        <h2>Что мы предлагаем</h2>
+        <li>разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера; </li>
+        <li>составление меню согласно концепции и оснащения бара (кафе, столовой); </li>
+        <li>подбор посуды, текстиля под общий стиль; </li>
+        <li>профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; </li>
+        <li>доставку в любой регион РФ; </li>
+        <li>монтажные и пуско-наладочные работы; </li>
+        <li>автоматизацию производственного процесса, что позволяет определённое оборудование для бара; </li>
+        <li>экспертную поддержку бизнеса;</li>
+        <li>гарантию на обслуживание, сервисное сопровождение выполненных нами проектов. </li>
+        <p> «Диалог» сотрудничает с ведущими мировыми брендами, поэтому имеет возможность предложить каждому клиенту профессиональное барное оборудование и индивидуальное решение на его основе. </p>
+
+        <div style="display:none" class="show-more-block">
+
+          <h3>Этапы оснащения кафе</h3>
+          <p>Независимо от типа объекта, будь то детское кафе или китайский ресторан, последовательность задач при заказе услуги «под ключ» выглядит одинаково. </p>
+          <p>На первом этапе выбирается подходящее помещение и проводится анализ спроса на подобное заведение. Оценка необходима, если концепция меняется кардинально, либо заведение создаётся «с нуля». </p>
+          <p>Затем составляется техническое задание, которое учитывает вместимость помещения, формируется общая модель работы и технологический процесс, определяется необходимое технологическое оборудование для ресторана. </p>
+          <p>Согласно ТЗ, разрабатывается план расположения ресторанного оборудования и его 3D-модель. Этап позволяет выявить неочевидные ошибки, которые в дальнейшем могут привести к нарушению технологии или существенному снижению производительности. После тщательного анализа производятся работы по монтажу и пуско-наладке. </p>
+          <p>Сложностью в деле создания самостоятельного и эффективного предприятия питания является не столько проблема купить кухонное оборудование для столовой, сколько получить документы проверяющих инстанций. Помимо продажи и проектирования, мы может оказать содействие в получении необходимых разрешений. </p>
+          <h3>Наши преимущества</h3>
+          <ol>
+            <li>комплексное решение «под ключ» - клиенту нужно лишь обратиться к нам; </li>
+            <li>отлаженный поэтапный механизм реализации проектов, большой опыт и портфолио законченных работ; </li>
+            <li>сервисное обслуживание, куда входят работы по настройке профессионального оборудования для кухни кафе и ресторана, гарантийное обслуживание, постгарантийный сервис; </li>
+            <li>наличие готовых и типовых проектов, что сводит к минимуму оценочную стоимость предполагаемых работ; </li>
+            <li>собственный проектный отдел – разработка концепции, проекта и калькуляция расходов в короткие сроки; </li>
+            <li>подробный каталог с возможностью помощи консультанта; </li>
+            <li>гарантированная доставка по Москве и во все регионы страны с учётом специфики каждого маршрута; </li>
+            <li>оснащение ресторанов технологическим оборудованием только проверенных производителей. </li>
+          </ol>
+          <p>Постройте свой эффективный бизнес вместе с компанией «Диалог». </p>
+        </div>
+        <div class="show-more-but">+</div>			</div>
+      <div class="portfolio-seo__context__right">
+        <div class="logo">
+          <div class="image"><img src="images/28455723ed12a9b4a389c6db5d917d92.png"></div>
+          <div class="title">Столовая.РУ</div>
+          <div class="text">создание оптимальных пищеблоков</div>
+        </div>
+        <div class="company">
+          <div class="title">Группа компаний</div>
+          <div class="text">Показатели:</div>
+        </div>
+        <div class="info">
+          <p>На рынке: 5 лет</p>
+          <p>Объем контрактов: 4 млрд.р.</p>
+          <p>Количество контрактов: 620</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__titles">
+      <div class="contacts-list"><span class="contacts__title">Информация</span>
+        <ul>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Проектирование</a></li>
+          <li><a href="#">Ресторанам</a></li>
+          <li><a href="#">Застройщикам</a></li>
+          <li><a href="#">Гос.заказчикам</a></li>
+          <li><a href="#">Таблет-питание</a></li>
+          <li><a href="#">Сервис</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="contacts-list"><span class="contacts__title">Оборудование</span>
+        <ul>
+          <li><a href="#">Тепловое</a></li>
+          <li><a href="#">Холодильное</a>
+          </li>
+          <li>
+            <a href="#">Электромеханическое</a>
+          </li>
+          <li>
+            <a href="#">Посудомоечное</a>
+          </li>
+          <li><a href="#">Линии раздачи</a></li>
+          <li><a href="#">Нейтральное</a>
+          </li>
+          <li>
+            <a href="#">Для фаст фуда</a>
+          </li>
+          <li><a href="#">Для залов</a>
+          </li>
+          <li><a href="#">Вспомагательное</a>
+          </li>
+          <li><a href="#">Для магазинов</a></li>
+        </ul>
+      </div>
+      <div class="contacts-list"><span class="contacts__title">Предложения</span>
+        <ul>
+          <li>
+            <a href="#">Детским садам и школам</a>
+          </li>
+          <li><a href="#">Для кондитерских</a></li>
+          <li><a href="#">Для пиццерий</a></li>
+          <li>
+            <a href="#">Для магазинов</a>
+          </li>
+          <li><a href="#">Для буфетов</a></li>
+          <li><a href="#">Для пищеблоков</a>
+          </li>
+          <li><a href="#">Для кафе</a></li>
+          <li><a href="#">Для горячих цехов</a>
+          </li>
+          <li><a href="#">Все предложения</a></li>
+        </ul>
+      </div>
+      <div class="contacts-list"><span class="contacts__title">Контакты</span>
+        <ul>
+          <li>8 495 790-72-05</li>
+          <li>8 800 333-88-31</li>
+          <li>звонок беспланый</li>
+          <li>Пн-Пт</li>
+          <li>09:00 до 18:00</li>
+          <li>info@stolovay.ru</li>
+          <li>109428, Москва,</li>
+          <li>Большая Семеновская 43с2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <div class="footer-left__img">
+        <img src="images/logo-empty.png"></div>
+      <div class="footer-left__text">
+        <span class="footer-left__text_b">Столовая.РУ</span><span class="footer-left__text_s">Создание оптимальных пищеблоков</span>
+      </div>
+    </div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter35060325 = new Ya.Metrika({
+              id:35060325,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true,
+              webvisor:true
+            });
+          } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35060325" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93222289-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!--        <div class="footer-right"><span>Сайт разработан NTI-systems</span></div>-->
+    <div class="footer-right">
+      <div class="footer-request">
+        <div class="request-footer-content request-footer-content-center">
+         Сайт разработан NTI-systems
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+<!-- RedHelper -->
+<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="https://web.redhelper.ru/service/main.js?c=stolovay">
+</script>
+<!--/Redhelper -->
+
+</body>
+
+</html>
