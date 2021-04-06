@@ -6,60 +6,80 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&amp;subset=cyrillic">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/desktop.css">
 </head>
 
 <body>
-<header class="desktop2">
+<header class="desktop">
   <div class="menu-top-wrap">
-        <ul>
-          <li><strong><a href="#">Компания</a></strong></li>
-          <li><strong><a href="#">Портфолио</a></strong></li>
-          <li><strong><a href="#">Проектирование</a></strong></li>
-          <li><strong><a href="#">Презентация</a></strong></li>
-          <li><strong><a href="#">Застройщикам</a></strong></li>
-          <li><strong><a href="#">Гос.заказчикам</a></strong></li>
-          <li><strong><a href="#">Таблет-питание</a></strong></li>
-          <li><strong><a href="#">Сервис</a></strong></li>
-          <li><strong><a href="#">Контакты</a></strong></li>
-          <li><strong><a href="#"><img src="images/mail.png" alt=""><span> info@stolovay.ru</span></a></strong></li>
-          <li class="tel-container header-open">
-            <strong><a href="#"><img src="images/phone.png" alt=""><span> 8 800 333-88-31</span></a></strong>
-          </li>
-        </ul>
+    <div class="top-wrap-1">
+      <ul>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Проектирование</a></li>
+        <li> <hr class="hr-style"></li>
+      </ul>
+    </div>
+    <div class="top-wrap-2">
+      <ul>
+        <li><a href="#">Ресторанам</a></li>
+        <li><a href="#">Застройщикам</a></li>
+        <li><a href="#">Гос.заказчикам</a></li>
+        <li><a href="#">Таблет-питание</a></li>
+      </ul>
+    </div>
+    <div class="top-wrap-3">
+      <ul>
+        <li><a href="#">Сервис</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#"><img src="images/mail.png" alt=""><span> info@stolovay.ru</span></a></li>
+        <li><a href="#"><img src="images/phone.png" alt=""><span> 8 800 333-88-31</span></a></li>
+      </ul>
+    </div>
   </div>
 
-  <div class="search desktop2">
+  <div class="menu-search">
+    <div class="search-goods">
+      <div class="goods-logo">
         <a href="#">
-        <img src="images/logo1.png" width="222" alt="Столовая.ру лого">
+          <img src="images/logo1.png" width="222" alt="Столовая.ру лого">
         </a>
-      <form method="get" action="/search/" class="search-find">
-       Все
-      </form>
-
-      <div class="search-suppliers">
-        <div class="suppliers-img">
-          <img src="images/suppliers.png" alt=""></div>
-        <div class="suppliers-text"><noindex><a target="_blank" rel="nofollow" href="#"><span>Мы на портале поставщиков</span>
-        </a></noindex></div>
       </div>
-      <a rel="nofollow" href="#" class="search-basket">
-        <div class="basket-left"><span class="basket-count">
-                           0                        </span>
+      <div class="goods-find">
+        <form method="get" action="/search/">
+          Все
+        </form>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+
+    <div class="search-suppliers">
+      <div class="suppliers-img">
+        <img src="images/suppliers.png" alt=""></div>
+      <div class="suppliers-text"><a href="#"><span>Мы на портале поставщиков</span></a></div>
+
+      <a href="#" class="search-basket">
+        <div class="basket-left">
+          <div class="basket-count">12</div>
           <div class="basket-img">
-            <img src="images/basket-img.png" alt=""></div>
+            <img src="images/basket-img.png" alt="">
+          </div>
         </div>
         <div class="basket-right">
           <div class="basket-sum"><span>Сумма</span></div>
-          <div class="basket-num"><span>0 руб.</span></div>
+          <div class="basket-num"><span><strong>150 000 руб.</strong></span></div>
         </div>
       </a>
+    </div>
   </div>
 
-  <div class="search-categories scroll-menu">
-    <section class="header-categories desktop2">
+  <div class="search-categories">
       <div class="categories">
-        <div class="container">
           <div class="swiper-container swiper-container__categories desktop">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -68,7 +88,7 @@
                     <div class="categories-item__image">
                       <img src="images/categories-1.png">
                     </div>
-                    <span>Тепловое</span>
+                    <strong><span>Тепловое</span></strong>
                   </a>
                 </div>
               </div>
@@ -78,7 +98,7 @@
                     <div class="categories-item__image">
                       <img src="images/categories-2.png">
                     </div>
-                    <span>Холодильное</span>
+                    <strong><span>Холодильное</span></strong>
                   </a>
                 </div>
               </div>
@@ -88,7 +108,7 @@
                     <div class="categories-item__image">
                       <img src="images/categories-3.png">
                     </div>
-                    <span>Электромеханическое</span>
+                    <strong><span>Электромеханическое</span></strong>
                   </a>
                 </div>
               </div>
@@ -98,7 +118,7 @@
                     <div class="categories-item__image">
                       <img src="images/categories-4.png">
                     </div>
-                    <span>Посудомоечное</span>
+                    <strong><span>Посудомоечное</span></strong>
                   </a>
                 </div>
               </div>
@@ -108,7 +128,7 @@
                     <div class="categories-item__image">
                       <img src="images/categories-5.png">
                     </div>
-                    <span>Хлебопекарное</span>
+                    <strong><span>Хлебопекарное</span></strong>
                   </a>
                 </div>
               </div>
@@ -117,14 +137,18 @@
                   <div class="categories-item__image">
                     <img src="images/categories-6.png">
                   </div>
-                  <span>Линии раздачи</span></a></div>
+                  <strong><span>Линии раздачи</span></strong>
+                </a>
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="categories-item"><a href="#" data-id="82">
                   <div class="categories-item__image">
                     <img src="images/categories-7.png">
                   </div>
-                  <span>Нейтральное</span></a></div>
+                  <strong> <span>Нейтральное</span></strong>
+                </a>
+                </div>
               </div>
               <div class="swiper-slide">
                 <div class="categories-item"><a href="#" data-id="83">
@@ -158,12 +182,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-
-        </div>
       </div>
-                </section>
-    <div class="shadow-l">
-    </div>
   </div>
 </header>
 
@@ -171,7 +190,7 @@
   <div class="container">
     <div class="main-block__context">
 
-      <div class="main-block__context__item desktop2">
+      <div class="main-block__context__item desktop">
 
         <div class="main-block__menu">
           <div class="title">Целевые предложения</div>
@@ -590,7 +609,7 @@
     <div class="footer-right">
       <div class="footer-request">
         <div class="request-footer-content request-footer-content-center">
-         Сайт разработан NTI-systems
+          Сайт разработан NTI-systems
         </div>
       </div>
     </div>

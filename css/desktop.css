@@ -1,0 +1,85 @@
+.desktop {
+   height: 100vh;
+}
+
+.desktop .menu-top-wrap {
+    background: #34a853;
+    padding-left: 153px;
+}
+
+.desktop .menu-top-wrap div {
+    display: inline-block;
+    margin: 0;
+}
+
+.desktop .menu-top-wrap ul .hr-style{
+    height: 20px;
+    width: 1px;
+    margin: 0;
+}
+
+.desktop .menu-top-wrap ul li {
+    display: inline-block;
+    margin-right: 35px;
+    padding: 0;
+}
+
+.desktop .menu-top-wrap ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.desktop .menu-search div{
+    display: inline-block;
+}
+
+.desktop .menu-search .empty{
+    width: 23%;
+}
+
+.desktop .menu-search .search-goods{
+    width: 35%;
+}
+
+.desktop .menu-search .search-goods .goods-logo{
+    margin-right: 5%;
+    padding: 0;
+}
+
+.desktop .menu-search .search-suppliers{
+    width: 40%;
+}
+
+.desktop .menu-search .search-suppliers a{
+    text-decoration: none;
+}
+
+.desktop .menu-search .search-suppliers .suppliers-text{
+    width: 20%;
+}
+
+.desktop .menu-search .search-suppliers .suppliers-text a{
+    color: #787878;
+}
+
+.desktop .menu-search .search-suppliers .search-basket .basket-left{
+    width: 5%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.desktop .menu-search .search-suppliers .search-basket .basket-right{
+    width: 20%;
+    color: #787878;
+}
+
+.desktop .menu-search .search-suppliers .search-basket .basket-left .basket-count{
+    color: #fbae51;
+}
+
+.search-categories .swiper-wrapper div{
+    display: inline-block;
+    margin-right: 1%;
+    padding: 0;
+}
